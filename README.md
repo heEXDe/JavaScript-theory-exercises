@@ -47,4 +47,32 @@ class Animal {
 }
 let Fido = new Animal(5200, "brown");
 console.log(`weight: ${Fido.weight}, color: ${Fido.dominantColor}`);
+// output: weight: 5200, color: brown
+```
+8. a class with a method
+```
+class Animal {
+  constructor(weight, dominantColor) {
+    this.weight = weight;
+    this.dominantColor = dominantColor;
+  }
+  move(){return "The animal is moving."}
+}
+let Fido = new Animal(5200, "brown");
+console.log(`${Fido.move()}`);
+// output: The animal is moving.
+```
+9. a class with a method using object properties
+```
+class Animal {
+  constructor(weight, dominantColor) {
+    this.weight = weight;
+    this.dominantColor = dominantColor;
+  }
+  move(){return "The animal is moving."}
+  size(){return this.weight > 2000 ? "it's a medium or large animal" : "it's a small animal"}
+}
+let Fido = new Animal(5200, "brown");
+console.log(`${Fido.size()}`);
+// output: it's a medium or large animal
 ```
