@@ -76,3 +76,20 @@ let Fido = new Animal(5200, "brown");
 console.log(`${Fido.size()}`);
 // output: it's a medium or large animal
 ```
+10. simple object
+```
+let obj01 = {
+  size: "small",
+  dimensions: [12, 3, 7.5],
+  // passing an object as a property of object obj01
+  paramOfConnecObject: {size: "medium", dimensions: [20, 11, 21], paramOfConnecObject: {}}
+}
+console.log(`size: ${obj01.size} and dimensions: ${obj01.dimensions} and ${obj01.paramOfConnecObject}`);
+```
+11. changing properties of an object
+```
+obj01.dimensions = [12, 3, 10];
+console.log(obj01.dimensions);
+obj01.dimensions[2] = 7.5;
+console.log(obj01.dimensions);
+```
